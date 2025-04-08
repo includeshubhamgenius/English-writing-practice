@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# ✍️ English Writing Practice App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A minimalist web app to help you practice English writing by observing high-quality images and expressing your thoughts. Built using **React** and **Tailwind CSS**, this app gives you a random landscape image and a clean interface to write at least 50 words in English.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🖼️ Features
 
-### `npm start`
+- 🔀 Loads a random high-quality **landscape image** from Unsplash API
+- 📝 **Write your thoughts** (minimum 50 words required)
+- ✅ Text turns **green** once 50-word mark is reached
+- 🔁 Load a new image anytime for a fresh writing prompt
+- 🎯 Minimalist and distraction-free design using Tailwind CSS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📸 Screenshot
 
-### `npm test`
+![App Screenshot](screenshot.png) <!-- Add a real screenshot image in your repo with this name -->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🚀 Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React**
+- **Tailwind CSS**
+- **Unsplash API**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📦 Installation
 
-### `npm run eject`
+1. **Clone this repository**
+   git clone https://github.com/includeshubhamgenius/English-writing-practice
+   cd writing-practice
+3. **Install dependencies**
+   npm install
+4. **Add your Unsplash API key**
+   In App.jsx, replace:
+   const response = await fetch('https://api.unsplash.com/photos/random?client_id=YOUR_UNSPLASH_API_KEY');
+   With your own API.
+   
+6. **Run the app locally**
+  npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Folder Structure**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+src/
+│
+├── components/
+│   ├── Greeting.jsx
+│   ├── ImageDisplay.jsx
+│   ├── TextArea.jsx
+│   └── ReloadButton.jsx
+│
+├── App.jsx
+└── index.css
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
