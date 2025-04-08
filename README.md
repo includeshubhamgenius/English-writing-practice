@@ -31,17 +31,26 @@ A minimalist web app to help you practice English writing by observing high-qual
 ## 📦 Installation
 
 1. **Clone this repository**
+   ```
    git clone https://github.com/includeshubhamgenius/English-writing-practice
    cd writing-practice
+   ```
 3. **Install dependencies**
+   ```
    npm install
-4. **Add your Unsplash API key**
+   ```
+5. **Add your Unsplash API key**
    In App.jsx, replace:
+   ```
    const response = await fetch('https://api.unsplash.com/photos/random?client_id=YOUR_UNSPLASH_API_KEY');
+   ```
    With your own API.
    
-6. **Run the app locally**
-  npm start
+7. **Run the app locally**
+   ```
+   npm start
+   ```
+
 
 **Folder Structure**
 
