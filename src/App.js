@@ -11,7 +11,7 @@ export default function App() {
   const [text, setText] = useState('');
 
   const fetchImage = async () => {
-    const response = await fetch('https://api.unsplash.com/photos/random?orientation=landscape&client_id=bwQRkeRgcApZ-X3thXGnT0JMvSOBITXDz7pZkD-lEx4');
+    const response = await fetch(`https://api.unsplash.com/photos/random?orientation=landscape&client_id=${import.meta.env.VITE_UNSPLASH_KEY}`);
     const data = await response.json();
     setImageUrl(data.urls.regular);
     setText('');
